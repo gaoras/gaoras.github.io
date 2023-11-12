@@ -4,10 +4,29 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <script type="text/javascript" src='./main.js'></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <p>Hello World</p>
-    <button  onclick="alertHelloWorld()">ここを押してね！</button>
+    <h1>風来のシレン　アイテム判別</h1>
+    <h3>売値検索</h3>
+    <label>売値</label>
+    <input type="number" name="sell_value" maxlength="10" value="売値を入力してください">
+    <button  onclick="alertHelloWorld()">検索</button>
+
+    <h3>検索結果</h3>
+    <table>
+        <tr>
+            <th>アイコン</th><th>種類</th><th>アイテム名</th><th>買値</th><th>売値</th>
+        </tr>
+        <tr>
+            <td><img src="./img/scroll.PNG"></td>
+            <td>巻物</td><td>紹介状</td><td>10</td><td>3</td>
+        </tr>
+        <tr>
+            <td><img src="./img/scroll.PNG"></td>
+            <td>巻物</td><td>ぬれた巻物</td><td>10</td><td>3</td>
+        </tr>
+    </table>
 </body>
 </html>
