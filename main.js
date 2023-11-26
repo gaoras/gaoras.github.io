@@ -7,11 +7,35 @@ const searchItems = () => {
 function ReadDataBase() {
     var items = "";
     var table = Array();
-    let searchValue = document.getElementById('sellValue').value;
 
-    items = DataBase.filter((e)=>(
-           (e.price.sell==searchValue)
-        ));
+    let elems = document.getElementsByName('searchKey');
+    let val = "";
+
+    for(var ele of elems){
+        if(ele.checked){
+            val = ele.value;
+            break;
+        }
+    }
+
+    let searchValue = 0
+    switch (val) {
+        case "buy":
+            searchValue = document.getElementById('buyValue').value;
+            items = DataBase.filter((e)=>(
+                (e.price.buy==searchValue)
+            ));
+            break;
+        case "sell":
+            searchValue = document.getElementById('sellValue').value;
+            items = DataBase.filter((e)=>(
+                (e.price.sell==searchValue)
+            ));
+            break;
+        default:
+            break;
+    }
+
     items.forEach(item => {
         table.push(item);
     });

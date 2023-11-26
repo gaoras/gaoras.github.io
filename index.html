@@ -10,9 +10,11 @@
 </head>
 <body>
     <h1>風来のシレン<br>アイテム判別</h1>
-    <h3>売値検索</h3>
-    <label>売値</label>
-    <input id="sellValue" type="number" name="sell_value" maxlength="10" value="売値を入力してください">
+    <h3>値段検索</h3>
+    <label><input type="radio" name="searchKey" value="buy">買値</label>
+    <input id="buyValue" type="number" name="buy_value" maxlength="10" min="0" value="買値を入力してください"><br>
+    <label><input type="radio" name="searchKey" value="sell">売値</label>
+    <input id="sellValue" type="number" name="sell_value" maxlength="10" min="0" value="売値を入力してください">
     <button  onclick="searchItems()">検索</button>
 
     <h3>検索結果</h3>
