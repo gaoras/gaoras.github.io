@@ -104,6 +104,7 @@ var DataBase =
 	{ type:ItemType.Grass,		name:'忌火起草',			price:{buy:2000,	sell:700} },
 	{ type:ItemType.Grass,		name:'天使の種',			price:{buy:5000,	sell:1750} },
 	{ type:ItemType.Grass,		name:'超不幸の種',			price:{buy:5000,	sell:1750} },
+	// 札
 	{ type:ItemType.Amulet,		name:'睡眠の札',			price:{buy:500,		sell:175} },
 	{ type:ItemType.Amulet,		name:'封印の札',			price:{buy:500,		sell:175} },
 	{ type:ItemType.Amulet,		name:'混乱の札',			price:{buy:500,		sell:175} },
@@ -160,5 +161,6 @@ var DataBase =
 	{ type:ItemType.Cane,		name:'土塊の杖',			price:{buy:3000,	sell:1050} },
 	{ type:ItemType.Cane,		name:'幸せの杖',			price:{buy:4000,	sell:1400} },
 	{ type:ItemType.Cane,		name:'不幸の杖',			price:{buy:4000,	sell:1400} },
-	{ type:'',		name:'',	price:{buy:0,	sell:0} },
 ]
+
+
