@@ -32,6 +32,9 @@ function ReadDataBase() {
                 (e.price.sell==searchValue)
             ));
             break;
+        case "all":
+            items = DataBase;
+            break;
         default:
             break;
     }
